@@ -1,0 +1,10 @@
+.cart-container{
+    background-color:lightgrey;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border:2px solid lightpink;
+}

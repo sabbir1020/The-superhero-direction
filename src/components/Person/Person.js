@@ -1,24 +1,28 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee,faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Person.css'
 
 const Person = (props) => {
     // console.log(props.person)
     const {name,img,age,contain,country,salari}=props.person;
+    const element = <FontAwesomeIcon icon={faCoffee , faShoppingCart} />
     return (
   <div className=''>           
-         <div class="">
-            <div class="col">
-                <div class="card">
+         <div className="">
+            <div className="col">
+                <div className="card">
                 <img src={img} class="card-img-top" alt="..."/>
-                <div class="card-body">
-                    <h5 class="card-title">Name:{name}</h5>
-                    <h5 class="card-title">Age:{age}</h5>
-                    <h5 class="card-title">Content:{contain}</h5>
-                    <h5 class="card-title">Salari:{salari}</h5>
-                    <h5 class="card-title">Country:{country}</h5>
-                    <button 
+                <div className="card-body">
+                    <h5 className="card-title">Name:{name}</h5>
+                    <h5 className="card-title">Age:{age}</h5>
+                    <h5 className="card-title">Content:{contain}</h5>
+                    <h5 className="card-salari">Salari:{salari}</h5>
+                    <h5 className="card-title">Country:{country}</h5>
+                    <button className="btn-regula"
                     onClick={()=>props.handleAddPerson(props.person)}
-                    >Add To Add</button>
+                    > {element}Add To Cart</button>
+                    
                 </div>
                 </div>
             </div>
