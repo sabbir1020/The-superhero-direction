@@ -33,7 +33,3 @@ const Person = (props) => {
 
 export default Person;
 
-
-//  {/* <h2>Name:{name}</h2>
-//             <h2>Name:{age}</h2>
-//             <h2>Name:{country}</h2> */}
